@@ -1,0 +1,376 @@
+@import url('https://fonts.googleapis.com/css2?family=Jost&display=swap');
+
+:root{
+    --lightColor : #F2E3DB;
+    --lightGreen : #41644A;
+    --darkGreen : #263A29;
+    --orange : #E86A33;
+}
+body{
+    background-color:var(--lightColor);
+    font-family: 'Jost';
+}
+header.main_top{
+    margin: 20px auto;
+    text-align: center;
+    width: 60%;
+}
+header.main_top>a>img{
+    width: 25%;
+    height: auto;
+    margin: 10px auto;
+    text-align: center;
+}
+nav.main_top_nav{
+    margin: 30px auto;
+    display: flex;
+    justify-content: center;
+
+}
+nav.main_top_nav>li{
+    display: inline;
+}
+nav.main_top_nav>li>a{
+    display: inline-block;
+    width: 200px;
+    text-decoration: none;
+    font-size: 1rem;
+    color: var(--darkGreen);
+    transition: 0.2s ease 0s;
+    border-top: 2px solid var(--lightGreen);
+    border-bottom: 2px solid var(--lightGreen);
+    font-weight: bold;
+}
+nav.main_top_nav>li>a:hover,nav.main_top_nav>li>a:focus{
+    border-top: 2px solid var(--orange);
+    border-bottom: 2px solid var(--orange);
+    background-color: #eee;
+}
+
+.homepage{
+    width: 75%;
+    display: flex;
+    justify-content: space-between;
+    margin: 0 auto;
+    line-height: 1.5rem;
+ }
+ 
+.descriptionSec{
+    width: 50%;
+ }
+
+ .descriptionSec>p{
+    width: 90%;
+    border-right: 2px solid var(--lightGreen);
+    border-left: 2px solid var(--lightGreen);
+    padding: 10px;
+    margin: 10px auto;
+ }
+
+.descriptionSec>h4{
+  text-align: center;
+  color: var(--darkGreen);
+  font-weight: bold;
+  font-size: 2rem;
+}
+
+.newsLetterBox{
+  background-color: var(--darkGreen);
+  padding: 10px;
+  color: var(--lightColor);
+  width: 91%;
+  margin: 30px auto;
+  text-align: center;
+}
+.newsLetterBox>form{
+  margin: 10px 0;
+}
+.newsLetterBox>form>input[type=text]{
+  background-color: var(--lightColor);
+  padding: 5px;
+  border: 0px solid;
+  width: 50%;
+  font-size: 1rem;
+  font-family: 'Jost';
+
+}
+.newsLetterBox>form>button{
+  padding: 5.5px;
+  border:1px solid var(--lightColor);
+  background-color: var(--darkGreen);
+  color: var(--lightColor);
+  transition: 0.6s ease;
+  cursor: pointer;
+  font-size: 1.05rem;
+}
+.newsLetterBox>form>button:hover,.newsLetterBox>form>button:focus{
+  background-color: var(--lightGreen);
+}
+
+
+.slideshowSec {
+    width: 50%;
+  position: relative;
+  margin: auto;
+
+}
+
+/* Hide the images by default */
+.mySlides {
+  display: none;
+}
+
+.mySlides>img{
+  -webkit-box-shadow: 0px 28px 23px -18px rgba(0,0,0,0.75);
+  -moz-box-shadow: 0px 28px 23px -18px rgba(0,0,0,0.75);
+  box-shadow: 0px 28px 23px -18px rgba(0,0,0,0.75);
+}
+
+/* Next & previous buttons */
+.prev, .next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  margin-top: -22px;
+  padding: 16px;
+  color: white;
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+}
+
+/* Position the "next button" to the right */
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover, .next:hover {
+  background-color: rgba(0,0,0,0.8);
+}
+
+
+
+/* Fading animation */
+.fade {
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@keyframes fade {
+  from {opacity: .4}
+  to {opacity: 1}
+}
+
+.feautures{
+  width: 59.5%;
+  display: flex;
+  justify-content: space-around;
+  margin: 40px auto;
+  line-height: 1.5rem;
+  border-right: 2px solid var(--lightGreen);
+  border-left: 2px solid var(--lightGreen);
+  text-align: center;
+  color: var(--darkGreen);
+
+} 
+.feauturesIcon{
+  font-size: 2rem;
+  margin: 10px auto;
+}
+footer.mainFooter{
+  width: 60%;
+  margin: 40px auto;
+  background-color: var(--darkGreen);
+  color: var(--lightColor);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  -webkit-box-shadow: 0px 28px 23px -18px rgba(0,0,0,0.75);
+  -moz-box-shadow: 0px 28px 23px -18px rgba(0,0,0,0.75);
+  box-shadow: 0px 28px 23px -18px rgba(0,0,0,0.75);
+}
+footer.mainFooter>section.footerDescription{
+  text-align: center;
+}
+section.footerDescription{
+  width: 100%;
+}
+.contactUS{
+  margin: 20px;
+  border-bottom: 1px solid var(--lightColor);
+  padding-bottom: 20px;
+}
+.socialSection{
+  margin: 20px;
+  border-bottom: 1px solid var(--lightColor);
+  padding-bottom: 20px;
+}
+.socialSection>h6{
+  font-size: 1rem;
+  margin: 10px auto;
+}
+.socialSection>li{
+  display: inline;
+}
+.socialSection>li>a{
+  font-size: 1.5rem;
+  color: var(--lightColor);
+  margin: 0px 5px;
+}
+.socialSection>li>a:hover,.socialSection>li>a:focus{
+  color: #eee;
+}
+.copyRight{
+  font-size: 1rem;
+}
+iframe.locationMap{
+  width: 100% !important;
+}
+.requestsBox,.findOutMoreForm{
+  margin: 20px auto;
+  border-right: 2px solid var(--lightGreen);
+  border-left: 2px solid var(--lightGreen);
+}
+.requestsBox{
+  width: 75%;
+  overflow-x:auto;
+}
+table{
+  border-spacing: 50px 15px;
+}
+th{
+  font-size: 0.9rem !important;
+  font-weight: bold !important;
+}
+td{
+  font-size: 0.9rem !important;
+}
+
+.findOutMoreForm{
+  text-align:center;
+  margin:20px auto;
+  width: 60%;
+}
+.findOutMoreForm>p.findOutMoreText{
+  font-weight: bold;
+  font-size: 1rem;  
+  line-height: 1.8rem;
+}
+.findOutMoreForm>form>input[type=text],.findOutMoreForm>form>input[type=email],.findOutMoreForm>form>input[type=number]{
+  width: 80%;
+  margin: 10px auto;
+}
+
+/* For Mobile Portrait View */
+@media screen and (max-device-width: 480px) and (orientation: portrait) {
+    header.main_top>a>img{
+    width: 80%;
+    }
+    nav.main_top_nav{
+        margin: 10px auto;
+        display: block;
+    
+    }
+    nav.main_top_nav>li>a{
+        margin: 5px auto;
+    }
+    .descriptionSec {
+      width: 100%;
+    }
+    .homepage {
+      width: 100%;
+      display: block;
+    }
+    .slideshowSec{
+      width: 100%;
+    }
+    .newsLetterBox>form>input[type=text] {
+      width: 70%;
+    }
+    .feautures {
+      width: 100%;
+      border: 0px solid #fff;
+      display: block;
+    }
+    .feauturesList{
+      margin: 30px auto;
+    }
+    footer.mainFooter {
+      width: 100%;
+      margin: 40px auto;
+        display: block;
+
+    }
+    .footerDescription{
+      margin: 10px auto;
+      padding: 40px 0;
+    }
+    .findOutMoreForm{
+      width: 100%;
+      padding: 20px;
+    }
+}
+
+@media screen and (min-device-width: 768px) and (max-device-width: 1024px) {
+  header.main_top>a>img{
+    width: 80%;
+    }
+    nav.main_top_nav{
+        margin: 10px auto;
+        display: block;
+    
+    }
+    nav.main_top_nav>li>a{
+        margin: 5px auto;
+    }
+    .descriptionSec {
+      width: 100%;
+    }
+    .homepage {
+      width: 100%;
+      display: block;
+    }
+    .slideshowSec{
+      width: 100%;
+    }
+    .newsLetterBox>form>input[type=text] {
+      width: 70%;
+    }
+    .feautures {
+      width: 100%;
+      border: 0px solid #fff;
+      display: block;
+    }
+    .feauturesList{
+      margin: 30px auto;
+    }
+    footer.mainFooter {
+      width: 100%;
+      margin: 40px auto;
+        display: block;
+
+    }
+    .footerDescription{
+      margin: 10px auto;
+      padding: 40px 0;
+    }
+    header.main_top>a>img{
+      width: 70%;
+
+    }
+    .findOutMoreForm{
+      width: 80%;
+      padding: 10px;
+    }
+
+}
+ 
+/* For Mobile Landscape View
+@media screen and (max-device-width: 640px) and (orientation: landscape) {
+
+} */
