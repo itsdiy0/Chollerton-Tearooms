@@ -10,6 +10,9 @@ body{
     background-color:var(--lightColor);
     font-family: 'Jost';
 }
+ul,menu{
+padding-inline-start:0;
+}
 header.main_top{
     margin: 20px auto;
     text-align: center;
@@ -27,10 +30,11 @@ nav.main_top_nav{
     justify-content: center;
 
 }
-nav.main_top_nav>li{
+nav.main_top_nav>menu>li{
     display: inline;
+    margin:0 -3px;
 }
-nav.main_top_nav>li>a{
+nav.main_top_nav>menu>li>a{
     display: inline-block;
     width: 200px;
     text-decoration: none;
@@ -41,7 +45,7 @@ nav.main_top_nav>li>a{
     border-bottom: 2px solid var(--lightGreen);
     font-weight: bold;
 }
-nav.main_top_nav>li>a:hover,nav.main_top_nav>li>a:focus{
+nav.main_top_nav>menu>li>a:hover,nav.main_top_nav>menu>li>a:focus{
     border-top: 2px solid var(--orange);
     border-bottom: 2px solid var(--orange);
     background-color: #eee;
@@ -124,6 +128,7 @@ nav.main_top_nav>li>a:hover,nav.main_top_nav>li>a:focus{
   -webkit-box-shadow: 0px 28px 23px -18px rgba(0,0,0,0.75);
   -moz-box-shadow: 0px 28px 23px -18px rgba(0,0,0,0.75);
   box-shadow: 0px 28px 23px -18px rgba(0,0,0,0.75);
+  width:100%;
 }
 
 /* Next & previous buttons */
@@ -214,19 +219,25 @@ section.footerDescription{
   font-size: 1rem;
   margin: 10px auto;
 }
-.socialSection>li{
+.socialSection>menu>li{
   display: inline;
 }
-.socialSection>li>a{
+.socialSection>menu>li>a{
   font-size: 1.5rem;
   color: var(--lightColor);
   margin: 0px 5px;
 }
-.socialSection>li>a:hover,.socialSection>li>a:focus{
+.socialSection>menu>li>a:hover,.socialSection>menu>li>a:focus{
   color: #eee;
 }
 .copyRight{
   font-size: 1rem;
+}
+.copyRight>a{
+  color:var(--lightColor);
+}
+.copyRight>a:hover,.copyRight>a:focus{
+  color:var(--lightGreen);
 }
 iframe.locationMap{
   width: 100% !important;
@@ -251,7 +262,7 @@ td{
   font-size: 0.9rem !important;
 }
 
-.findOutMoreForm{
+section.findOutMoreForm{
   text-align:center;
   margin:20px auto;
   width: 60%;
@@ -261,11 +272,90 @@ td{
   font-size: 1rem;  
   line-height: 1.8rem;
 }
-.findOutMoreForm>form>input[type=text],.findOutMoreForm>form>input[type=email],.findOutMoreForm>form>input[type=number]{
+.findOutMoreForm>form>input[type=text],.findOutMoreForm>form>input[type=email],.findOutMoreForm>form>input[type=number],.findOutMoreForm>form>textarea{
+  width: 80%;
+  margin: 5px auto;
+  font-family: 'Jost';
+  border: 2px solid var(--darkGreen);
+  padding: 5px;
+  background-color: var(--lightColor);
+  font-size: 1rem;
+}
+.findOutMoreForm>form>input[type=submit]{
+  width: 30%;
+  font-family: 'Jost';
+  margin: 5px auto;
+  padding: 7px;
+  border: 0px solid #fff;
+  background-color:var(--lightGreen);
+  color: var(--lightColor);
+  transition: 0.2s ease 0s;
+  cursor: pointer;
+  font-size: 1rem;
+
+}
+.findOutMoreForm>form>input[type=submit]:hover,.findOutMoreForm>form>input[type=submit]:focus{
+  background-color: var(--darkGreen);
+}
+h6.formLabel{
+  font-size:0.9rem !important;
+}
+p.inputWarning{
+  display: none;
   width: 80%;
   margin: 10px auto;
+  background-color: #fab1a0;
+  border: 1px solid #b71540;
+  color:#b71540;
+  border-radius: 4px;
+  padding: 10px;
 }
-
+p.inputSuccess{
+  width: 80%;
+  margin: 10px auto;
+  background-color: #b8e994;
+  border: 1px solid #218c74;
+  color:#218c74;
+  border-radius: 4px;
+  padding: 10px;
+}
+select{
+    width: 81.25%;
+    margin: 5px auto;
+    border: 2px solid var(--darkGreen);
+    background: var(--lightColor);
+    padding: 7px;
+    font-size: 0.85rem;
+}
+section.creditBox{
+    width: 60%;
+    margin: 40px auto;
+    text-align: left;
+    font-weight:bold;
+    line-height:2rem;
+    padding: 20px 0;
+    border-right:2px solid var(--darkGreen);
+    border-left:2px solid var(--darkGreen);
+}
+section.creditBox>ul{
+    padding-inline-start:20px !important;
+    padding:20px;
+}
+section.creditBox>ul>li{
+    list-style-type:none;
+    margin:10px 0;
+}
+section.creditBox>ul>li>h4{
+    text-align:center;
+    font-weight:bold;
+    font-size:1.5rem;
+}
+section.creditBox>ul>li>a{
+    color:var(--lightGreen);
+}
+section.creditBox>ul>li>a:hover,section.creditBox>ul>li>a:focus{
+    color:var(--darkGreen);
+}
 /* For Mobile Portrait View */
 @media screen and (max-device-width: 480px) and (orientation: portrait) {
     header.main_top>a>img{
@@ -276,7 +366,10 @@ td{
         display: block;
     
     }
-    nav.main_top_nav>li>a{
+    nav.main_top_nav>menu>li{
+	margin 0 !important;
+    }
+    nav.main_top_nav>menu>li>a{
         margin: 5px auto;
     }
     .descriptionSec {
@@ -286,7 +379,7 @@ td{
       width: 100%;
       display: block;
     }
-    .slideshowSec{
+    .slideshowSec,section.creditBox{
       width: 100%;
     }
     .newsLetterBox>form>input[type=text] {
@@ -310,8 +403,8 @@ td{
       margin: 10px auto;
       padding: 40px 0;
     }
-    .findOutMoreForm{
-      width: 100%;
+    section.findOutMoreForm{
+      width: 87.5%;
       padding: 20px;
     }
 }
@@ -325,7 +418,10 @@ td{
         display: block;
     
     }
-    nav.main_top_nav>li>a{
+    nav.main_top_nav>menu>li{
+	margin 0 !important;
+    }
+    nav.main_top_nav>menu>li>a{
         margin: 5px auto;
     }
     .descriptionSec {
@@ -335,7 +431,7 @@ td{
       width: 100%;
       display: block;
     }
-    .slideshowSec{
+    .slideshowSec,section.creditBox{
       width: 100%;
     }
     .newsLetterBox>form>input[type=text] {
@@ -363,14 +459,10 @@ td{
       width: 70%;
 
     }
-    .findOutMoreForm{
+    section.findOutMoreForm{
       width: 80%;
       padding: 10px;
     }
 
 }
  
-/* For Mobile Landscape View
-@media screen and (max-device-width: 640px) and (orientation: landscape) {
-
-} */
