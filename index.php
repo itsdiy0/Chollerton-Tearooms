@@ -9,7 +9,7 @@
   </p> 
   <div class="newsLetterBox">
     Stay up-to-date with our latest news, promotions, and offers! Subscribe to our newsletter for exclusive updates !
-    <form action="">
+    <form action="#">
         <input type="text" placeholder="your e-mail address... ">
         <button type="submit">
           <i class="fa-solid fa-user-plus"></i>
@@ -21,28 +21,34 @@
 <div class="slideshowSec">
 
 <div class="mySlides fade">
-  <img src="assessts/images/1.jpg" style="width:100%">
+  <img src="assessts/images/1.jpg" alt="1">
 </div>
 
 <div class="mySlides fade">
-  <img src="assessts/images/2.jpg" style="width:100%">
+  <img src="assessts/images/2.jpg" alt="2">
 </div>
 
 <div class="mySlides fade">
-  <img src="assessts/images/3.jpg" style="width:100%">
+  <img src="assessts/images/3.jpg" alt="3">
 </div>
 
 <div class="mySlides fade">
-  <img src="assessts/images/4.jpg" style="width:100%">
+   <img src="assessts/images/7.jpg" alt="4">
 </div>
 
 <div class="mySlides fade">
-  <img src="assessts/images/5.jpg" style="width:100%">
+  <img src="assessts/images/4.jpg" alt="5">
 </div>
 
 <div class="mySlides fade">
-  <img src="assessts/images/6.jpg" style="width:100%">
+  <img src="assessts/images/5.jpg" alt="6">
 </div>
+
+<div class="mySlides fade">
+  <img src="assessts/images/6.jpg" alt="7">
+</div>
+
+
 
 <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
 <a class="next" onclick="plusSlides(1)">&#10095;</a>
@@ -56,23 +62,23 @@
 <section class="feautures">
   <div class="feauturesList">
   <div class="feauturesIcon"><i class="fa-solid fa-wifi"></i></div>
-    free WIFI
+      <h4>free WIFI</h4>
   </div>
   <div class="feauturesList">
   <div class="feauturesIcon"><i class="fa-solid fa-shop"></i></div>
-    Craft Shop
+      <h4>Craft Shop</h4>
   </div>
   <div class="feauturesList">
   <div class="feauturesIcon"><i class="fa-solid fa-envelopes-bulk"></i></div>
-        Post Office 
+      <h4>Post Office</h4>
   </div>
   <div class="feauturesList">
   <div class="feauturesIcon"><i class="fa-solid fa-bed"></i></div>
-    Bedrooms
+      <h4> Bedrooms</h4>
   </div>
   <div class="feauturesList">
   <div class="feauturesIcon"><i class="fa-solid fa-mug-saucer"></i></div>
-  Breakfast and Tea Facilities 
+      <h4>Breakfast and Tea Facilities</h4>
   </div>
 </section>
 
