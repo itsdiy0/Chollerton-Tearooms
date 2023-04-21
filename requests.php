@@ -25,7 +25,6 @@ function checkNull($s){
   </tr>
 <?php 
     if ($result->num_rows > 0) {
-      // output data of each row
       while($row = $result->fetch_assoc()) {
         echo "<tr><td>".checkNull($row['forename']) ;
         echo "</td><td>".checkNull($row['surname']) ;
@@ -35,20 +34,12 @@ function checkNull($s){
         echo "</td><td>".checkNull($row['sendMethod']) ;
         echo "</td><td>".checkNull($row['catDesc']) ;
         echo "</td></tr>";
-        // echo "<td>{$row['surname']}</td>".
-        // "<td>{$row['postalAddress']}</td>".
-        // "<td>{$row['mobileTelNo']}</td> ". 
-        // "<td>{$row['email']}</td> ".
-        // "<td>{$row['sendMethod']}</td> ".
-        // "<td> {$row['catDesc']}</td> </tr> ";
      }
     } else {
       echo "0 results";
     }
     $conn->close();
 ?>
-  
 </table>
 </section>
-
 <?php include "footer.php" ?>
