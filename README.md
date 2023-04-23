@@ -1,5 +1,5 @@
 # Chollerton Tearooms
-this is a sample website for an imaginary facility called Chollerton Tearooms as a university project which I had to do
+this is website design project for an imaginary facility called Chollerton Tearooms as a university project which I had to do
 goals in this project is to :
 - do not use any framework
 - have a responsive design
